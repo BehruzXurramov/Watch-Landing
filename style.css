@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.health {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 572px;
+  background-color: #002d3a;
+  background-image: url("./images/font_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.health_text {
+  width: 494px;
+}
+
+.health img {
+  width: 266px;
+  margin-left: 200px;
+}
+
+.health_text h2 {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 140%;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.health_text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: white;
+  opacity: 70%;
+  margin-bottom: 20px;
+}
+
+.health_text p span {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.health_text p:has(span) {
+  margin-bottom: 30px;
+}
+
+.link {
+  width: 137px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #13ae92;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: white;
+  text-decoration: none;
+}
+
+.clocks_column {
+  padding: 85px 270px 110px;
+}
+
+.clock_row {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.clock_img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock_text {
+  width: 50%;
+}
+
+.clock_text:nth-child(even) {
+  padding-left: 40px;
+}
+
+.clock_text:nth-child(odd) {
+  padding-right: 40px;
+}
+
+.clock_img img {
+  width: 100%;
+}
+
+.clock_text h2 {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+
+.clock_text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  opacity: 70%;
+  margin-bottom: 35px;
+}
+
+.life {
+  padding: 130px 255px 175px 230px;
+  display: flex;
+  align-items: center;
+}
+
+.activities,
+.perfect {
+  width: 50%;
+}
+
+.activities {
+  display: flex;
+  align-items: center;
+}
+
+.life_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.life_row {
+  box-shadow: 4px 6px 34px 4px #00000005;
+  padding: 38px 16px 36px 30px;
+  /* width: 261px; */
+}
+
+.life_column:first-child {
+  margin-right: 30px;
+}
+
+.life_column:last-child .life_row:first-child {
+  margin-bottom: 30px;
+}
+
+.life_row img {
+  margin-bottom: 38px;
+}
+
+.life_row h4 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 15px;
+}
+
+.life_row p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  margin-bottom: 13px;
+  opacity: 70%;
+}
+
+.life_row a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 80%;
+  color: black;
+  text-decoration: none;
+}
+
+.perfect {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.perfect > div {
+  width: 410px;
+}
+
+.perfect h2 {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+
+.perfect p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  opacity: 70%;
+  margin-bottom: 30px;
+}
+
+.top {
+  background-color: #002d3a;
+  height: 100vh;
+  position: relative;
+}
+
+.line1,
+.line2,
+.cube,
+.oval {
+  position: absolute;
+}
+
+.line1 {
+  width: 100%;
+  bottom: 0px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.line2 {
+  right: 100px;
+  top: calc(50% - 150px);
+}
+
+.cube {
+  left: 50%;
+  bottom: 120px;
+}
+
+.oval {
+  right: 32px;
+  bottom: 38px;
+}
+
+.navbar {
+  padding: 30px 230px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar > div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar img {
+  width: 68px;
+}
+
+.navbar span {
+  margin-right: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: white;
+}
+
+.navbar .link {
+  margin-left: 10px;
+}
+
+.top_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 110px 230px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.top_text {
+  width: 490px;
+}
+
+.top_content > img {
+  margin-right: 100px;
+  width: 250px;
+}
+
+.top_text > span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 10%;
+  color: #119786;
+  margin-bottom: 10px;
+}
+
+.top_text > h3 {
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 125%;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.top_text > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  opacity: 70%;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.bottom {
+  background-color: rgba(19, 174, 146, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 200px;
+}
+
+.bottom_text {
+  width: 490px;
+}
+
+.bottom > img {
+  margin-top: -150px;
+}
+
+.bottom_text h4 {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.bottom_text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  opacity: 70%;
+  margin-bottom: 50px;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+}
+
+.download img {
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 230px;
+  background-color: #012f3c;
+}
+
+.footer span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: white;
+  opacity: 50%;
+  text-wrap: nowrap;
+}
+
+.footer_line1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.pages span {
+  margin-right: 40px;
+}
+
+.footer_line1 img {
+  margin-bottom: 20px;
+  width: 76px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.icons i {
+  font-size: 17px;
+  margin-left: 34px;
+  color: white;
+  opacity: 50%;
+}
+
+.footer_line1 p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: white;
+  opacity: 70%;
+  width: 400px;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_line2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.footer_line2 div {
+  margin: 0px 15px;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
