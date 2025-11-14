@@ -6,6 +6,10 @@
   font-family: "Poppins";
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .health {
   display: flex;
   align-items: center;
@@ -432,4 +436,57 @@
   height: 1px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 30px 5% 0px;
+  }
+
+  .top_content {
+    padding: 200px 5% 0px;
+  }
+
+  .top_content img {
+    margin: 0px;
+  }
+
+  .life {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .life_column {
+    margin-right: 10px;
+  }
+
+  .life_row {
+    padding: 18px 16px 16px 10px;
+  }
+
+  .health img {
+    margin-left: 0px;
+  }
+
+  .clocks_column {
+    padding: 85px 5% 110px;
+  }
+
+  .bottom{
+    padding: 0px 5%;
+  }
+
+  .bottom_text {
+    padding-right: 10px;
+  }
+
+  .footer{
+    padding: 50px 5%;
+  }
+
+  .pages{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
 }
