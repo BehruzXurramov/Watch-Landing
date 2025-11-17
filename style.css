@@ -6,8 +6,16 @@
   font-family: "Poppins";
 }
 
-body{
+body {
   overflow-x: hidden;
+}
+
+.bars {
+  display: none;
+}
+
+.bars_close{
+  display: none;
 }
 
 .health {
@@ -247,7 +255,7 @@ body{
   justify-content: space-between;
 }
 
-.navbar > div {
+.navbar_menu {
   display: flex;
   align-items: center;
 }
@@ -472,7 +480,7 @@ body{
     padding: 85px 5% 110px;
   }
 
-  .bottom{
+  .bottom {
     padding: 0px 5%;
   }
 
@@ -480,13 +488,80 @@ body{
     padding-right: 10px;
   }
 
-  .footer{
+  .footer {
     padding: 50px 5%;
   }
 
-  .pages{
+  .pages {
     flex-direction: column;
     align-items: flex-start;
   }
+}
 
+@media (max-width: 767px) {
+  .bars {
+    display: flex;
+    position: relative;
+    width: max-content;
+  }
+
+  .bars_input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+  }
+
+  .bars i {
+    font-size: 40px;
+  }
+
+  .navbar_menu {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -70vw;
+    flex-direction: column;
+    background-color: #F5F5DC;
+    height: 100vh;
+    width: 70vw;
+    align-items:flex-start;
+    padding: 50px 0px 0px 40px;
+    transition: 0.5s;
+  }
+
+  .navbar_menu span, .navbar_menu a{
+    color: black;
+    margin: 0px 0px 20px 0px !important;
+  }
+
+  .navbar_menu i{
+    font-size: 20px;
+    opacity: 70%;
+  }
+
+  .bars_close{
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  .bars_close input{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .navbar:has(.bars input:checked) .navbar_menu{
+    right: 0vw;
+  }
+
+  .navbar:has(.bars_close input:checked) .navbar_menu{
+    right: -70vw;
+  }
 }
