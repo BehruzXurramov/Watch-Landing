@@ -14,7 +14,7 @@ body {
   display: none;
 }
 
-.bars_close{
+.bars_close {
   display: none;
 }
 
@@ -27,6 +27,7 @@ body {
   background-image: url("./images/font_1.png");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 0px 5%;
 }
 
 .health_text {
@@ -524,31 +525,32 @@ body {
     top: 0px;
     right: -70vw;
     flex-direction: column;
-    background-color: #F5F5DC;
+    background-color: #f5f5dc;
     height: 100vh;
     width: 70vw;
-    align-items:flex-start;
+    align-items: flex-start;
     padding: 50px 0px 0px 40px;
     transition: 0.5s;
   }
 
-  .navbar_menu span, .navbar_menu a{
+  .navbar_menu span,
+  .navbar_menu a {
     color: black;
     margin: 0px 0px 20px 0px !important;
   }
 
-  .navbar_menu i{
+  .navbar_menu i {
     font-size: 20px;
     opacity: 70%;
   }
 
-  .bars_close{
+  .bars_close {
     position: relative;
     margin-bottom: 20px;
     display: flex;
   }
 
-  .bars_close input{
+  .bars_close input {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -557,11 +559,114 @@ body {
     opacity: 0;
   }
 
-  .navbar:has(.bars input:checked) .navbar_menu{
+  .navbar:has(.bars input:checked) .navbar_menu {
     right: 0vw;
   }
 
-  .navbar:has(.bars_close input:checked) .navbar_menu{
+  .navbar:has(.bars_close input:checked) .navbar_menu {
     right: -70vw;
+  }
+
+  .top_content {
+    padding-top: 80px;
+  }
+
+  .top_content img {
+    display: none;
+  }
+
+  .top_text > h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .top_text > p {
+    margin-bottom: 15px;
+  }
+
+  .cube {
+    left: calc(50% - 100px);
+    bottom: 70px;
+  }
+
+  .line2 {
+    display: none;
+  }
+
+  .life {
+    flex-wrap: wrap;
+    padding: 80px 5%;
+  }
+
+  .activities,
+  .perfect {
+    width: 100%;
+  }
+
+  .perfect {
+    margin-top: 40px;
+  }
+
+  .health img{
+    display: none;
+  }
+
+  .clocks_column .clock_row{
+    flex-direction: column;
+  }
+
+  .clocks_column .clock_row:nth-child(2){
+    flex-direction: column-reverse;
+  }
+
+  .clock_text, .clock_img{
+    width: 100%;
+  }
+
+  .clock_text{
+    padding: 40px 0px 0px 0px !important;
+  }
+
+  .bottom{
+    flex-direction: column;
+  }
+
+  .bottom_text{
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  .bottom > img{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .footer_line1{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pages{
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .pages span{
+    margin: 0px;
+  }
+
+  .center p{
+    width: 100%;
+  }
+
+  .icons{
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  .icons i{
+    margin: 0px;
   }
 }
