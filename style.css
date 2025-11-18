@@ -500,7 +500,7 @@ body {
   left: 10%;
 }
 
-.author_logo input{
+.author_logo input {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -511,6 +511,45 @@ body {
 
 .author_img img {
   width: 100%;
+}
+
+@keyframes aylan {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.author:has(input:checked) .author_text {
+  width: 270px;
+  opacity: 1;
+}
+
+.author:has(input:checked) .author_border_cutter {
+  display: none;
+}
+
+.author_text {
+  display: flex;
+  flex-direction: column;
+  width: 0px;
+  background-color: #697096;
+  transition: 0.5s;
+  opacity: 0;
+  padding: 10px 0px 10px 15px;
+  border-radius: 25px 0px 0px 25px;
+  margin-right: -20px;
+}
+
+.author_text span {
+  font-weight: 300;
+}
+
+.author_text h3 a {
+  color: black;
+  text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
@@ -673,66 +712,67 @@ body {
     margin-top: 40px;
   }
 
-  .health img{
+  .health img {
     display: none;
   }
 
-  .clocks_column .clock_row{
+  .clocks_column .clock_row {
     flex-direction: column;
   }
 
-  .clocks_column .clock_row:nth-child(2){
+  .clocks_column .clock_row:nth-child(2) {
     flex-direction: column-reverse;
   }
 
-  .clock_text, .clock_img{
+  .clock_text,
+  .clock_img {
     width: 100%;
   }
 
-  .clock_text{
+  .clock_text {
     padding: 40px 0px 0px 0px !important;
   }
 
-  .bottom{
+  .bottom {
     flex-direction: column;
   }
 
-  .bottom_text{
+  .bottom_text {
     width: 100%;
     padding: 20px 0px;
   }
 
-  .bottom > img{
+  .bottom > img {
     width: 100%;
     margin-top: 10px;
   }
 
-  .footer_line1{
+  .footer_line1 {
     flex-direction: column;
     align-items: center;
   }
 
-  .pages{
+  .pages {
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
   }
 
-  .pages span{
+  .pages span {
     margin: 0px;
   }
 
-  .center p{
+  .center p {
     width: 100%;
   }
 
-  .icons{
+  .icons {
     width: 100%;
     justify-content: space-evenly;
     margin-top: 20px;
   }
 
-  .icons i{
+  .icons i {
     margin: 0px;
   }
 }
